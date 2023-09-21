@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung_AC</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding:0px;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            height:80px;
+            background-color: rgb(3, 3, 3);
+        }
+        .logo{
+            width:900px;
+            font-size: 30px;
+            padding:10px;
+            color:white;
+        }
+        .list{
+            padding-top:30px;
+        }
+        .list ul{
+            list-style-type: none;
+            display: flex;
+            font-size: 24px;
+            color:white;
+            gap:50px;
+            
+        }
+        .content{
+            /* padding-top:100px; */
+            display:flex;
+            flex-direction: row;
+            text-align: left;
+            justify-content: center;
+            border:1px solid black;
+        }
+        .content img{
+            height:300px;
+            width:300px;
+        }
+        .content .matter{
+            padding:20px;
+            border-left:1px solid black;
+            line-height: 50px;
+            font-size: 22px;
+        }
+        .orange{
+            background-color: orange;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="nav">
+            <div class="logo">
+                <h1>Ecommerce</h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>Laptop</li>
+                    <li>Mobiles</li>
+                    <li>AC</li>
+                    <li>TV</li>
+                    <li>Camera</li>
+                    <li>Watch</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="img">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+            <div class="matter">
+                <h2>Samsung 1.5 Ton 3 Star Inverter Split AC</h2><h2> (Copper AR18RV3HFTY White)</h2>
+                <p>Warranty - 1 year on product, 1 year on condenser</p><p>10 years on compressor</p>
+                <!-- <p>Deal Price: &#x20B9;52,500</p> -->
+                <p>Offer Price: &#x20B9;39,000</p>
+                <p>MRP:&#x20B9;50,000 (Inclusive of all taxes)</p>
+                <p>You Save: &#x20B9;11,000</p>
+                <p>EMIs (Credit cards) from &#x20B9;4099.09/month | View-Plans FREE Shipping! </p>
+                <input type="button" value="ADD TO CART" style="background-color:orange;padding:10px;">
+                <input type="button" value="BUT NOW" style="background-color:blue;padding:10px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

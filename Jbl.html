@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBL</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding:0px;
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            height:80px;
+            background-color: rgb(3, 3, 3);
+        }
+        .logo{
+            width:900px;
+            font-size: 30px;
+            padding:10px;
+            color:white;
+        }
+        .list{
+            padding-top:30px;
+        }
+        .list ul{
+            list-style-type: none;
+            display: flex;
+            font-size: 24px;
+            color:white;
+            gap:50px;
+            
+        }
+        .content{
+            /* padding-top:100px; */
+            display:flex;
+            flex-direction: row;
+            text-align: left;
+            justify-content: center;
+            border:1px solid black;
+        }
+        .content img{
+            height:300px;
+            width:300px;
+            margin-top:40px;
+            margin-right:40px;
+        }
+        .content .matter{
+            padding:20px;
+            border-left:1px solid black;
+            line-height: 50px;
+            font-size: 22px;
+        }
+        .orange{
+            background-color: orange;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="nav">
+            <div class="logo">
+                <h1>Ecommerce</h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>Laptop</li>
+                    <li>Mobiles</li>
+                    <li>AC</li>
+                    <li>TV</li>
+                    <li>Camera</li>
+                    <li>Watch</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="img">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+            <div class="matter">
+                <h2>JBL Partybox Encore Essential | Portable Bluetooth Party Speaker |</h2><h2>Upto 6Hrs Playtime | Built-in Powerbank | Mic Support PartyBox App (Black)</h2>
+                <p>Warranty - 1 year on product</p>
+                <!-- <p>Deal Price: &#x20B9;52,500</p> -->
+                <p>Offer Price: &#x20B9;19,000</p>
+                <p>MRP:&#x20B9;29,900 (Inclusive of all taxes)</p>
+                <p>You Save: &#x20B9;33% OFF</p>
+                <p>EMIs (Credit cards) from &#x20B9;6599.89/month | View-Plans FREE Shipping! </p>
+                <input type="button" value="ADD TO CART" style="background-color:orange;padding:10px;">
+                <input type="button" value="BUT NOW" style="background-color:blue;padding:10px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
