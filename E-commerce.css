@@ -204,3 +204,12 @@ html{
 a:hover{
     transform: skew(90deg);
 }
+.b1 div:hover{
+    transform: scale(1.3);
+}
+.b2 div:hover{
+    transform: scale(1.3);
+}
+.new div:hover{
+    transform: scale(1.3);
+}
